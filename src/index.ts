@@ -5,7 +5,7 @@ export interface Env {
 export default {
   async scheduled(event: ScheduledEvent, env: Env, ctx: ExecutionContext): Promise<void> {
     const OWNER = 'lexanachile';
-    const REPO = 'CloudflareCronWorker';
+    const REPO = 'FamcsSkedBot';
     const WORKFLOW = 'parser.yml';  // ← именно ваш файл
 
     const url = `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${WORKFLOW}/dispatches`;
